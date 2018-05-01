@@ -1,4 +1,4 @@
-This project creates the static frontend files using [reasonml](https://reasonml.github.io/)
+This project provides the frontend for iShakuni
 
 
 ### Local development
@@ -17,8 +17,4 @@ Install [yarn](https://yarnpkg.com/en/docs/install) and use the following
 
   yarn test
     Starts the test runner.
-
-  yarn eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
 ```
