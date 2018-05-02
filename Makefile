@@ -1,6 +1,6 @@
 VERSION := $(shell git describe --always)
-GCR_PROJECT := ishakuni-stag
-GCR_REGION := eu.gcr.io
+GCR_PROJECT ?= ishakuni-stag
+GCR_REGION ?= eu.gcr.io
 
 IMAGE_TAG = ${GCR_REGION}/${GCR_PROJECT}/frontend:${VERSION}
 
