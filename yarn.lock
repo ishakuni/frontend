@@ -1882,6 +1882,11 @@ browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.1.1, browserslist@^4.2
     electron-to-chromium "^1.3.80"
     node-releases "^1.0.0-alpha.14"
 
+bs-fetch@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.3.0.tgz#60c64457359d0c7e0798d5a04db8987d16c4f8f3"
+  integrity sha512-5BdPq9nO7MYlpFZg6t3Dt46cNZAWsc2/WvwHrwlhhsAhBQ1lIukOeb3DCqX4auYKlTtUags/DNERuwV6zNR0XA==
+
 bs-loader@^2.0.3:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/bs-loader/-/bs-loader-2.0.7.tgz#2ce26752e08cab165b0625580e2b2d19476cfc6d"

@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.4",
+    "bs-fetch": "^0.3.0",
     "reason-react": "^0.5.3"
   },
   "browserslist": [
