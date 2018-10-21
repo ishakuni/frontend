@@ -1,3 +1,7 @@
+# ishakuni
+
+[![Build Status](https://travis-ci.org/ishakuni/frontend.svg?branch=master)](https://travis-ci.org/ishakuni/frontend)
+
 This project provides the frontend for iShakuni
 
 
