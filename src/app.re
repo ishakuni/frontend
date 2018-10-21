@@ -10,10 +10,10 @@ let make = (~message, _children) => {
     <div className="App">
       <div className="App-header">
         <img src=logo className="App-logo" alt="logo" />
-        <h1> (ReasonReact.stringToElement(message)) </h1>
+        <h1> (ReasonReact.string(message)) </h1>
       </div>
       <p className="App-intro">
-        (ReasonReact.stringToElement("Content goes here"))
+        (ReasonReact.string("Content goes here"))
       </p>
     </div>
 };

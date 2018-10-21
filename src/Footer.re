@@ -7,10 +7,10 @@ let make = (_children) => {
   render: (_self) =>
     <div className="Footer">
       <p>
-        (ReasonReact.stringToElement("Built with love by Pradip Caulagi"))
+        (ReasonReact.string("Built with love by Pradip Caulagi"))
       </p>
       <p>
-        <a> {ReasonReact.stringToElement("Credits")} </a>
+        <a> {ReasonReact.string("Credits")} </a>
       </p>
     </div>
 };
