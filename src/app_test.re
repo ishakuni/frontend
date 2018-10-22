@@ -1,5 +1,8 @@
-open Jest;
+import React from 'react';
+import { render } from 'react-testing-library';
+import App from './App';
 
-test("addition", (_) =>
-  Expect.(expect(3 + 4) |> toBe(7))
-);
+it('renders welcome message', () => {
+  const { getByText } = render(<App />);
+  expect(getByText('Fantasy bets')).toBeInTheDocument();
+});
