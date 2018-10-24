@@ -1,7 +1,15 @@
 {
   "name": "reason-scripts",
-  "sources": ["src"],
-  "bs-dependencies": ["reason-react", "@glennsl/bs-jest", "bs-fetch"],
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "src/__tests__",
+      "type": "dev"
+    }
+  ],
   "reason": {
     "react-jsx": 2
   },
@@ -10,5 +18,14 @@
     "module": "commonjs",
     "in-source": true
   },
+  "bs-dependencies": [
+    "reason-react",
+    "bs-fetch"
+  ],
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest",
+    "bs-jest-dom",
+    "bs-react-testing-library"
+  ],
   "suffix": ".bs.js"
 }
