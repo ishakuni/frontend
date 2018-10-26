@@ -15,14 +15,14 @@
     "eject": "react-scripts eject",
     "prepare": "npm link bs-platform",
     "clean": "bsb -clean-world",
-    "preclean": "rimraf .merlin"
+    "preclean": "rimraf lib .merlin"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
     "@glennsl/bs-jest": "^0.4.4",
     "bs-fetch": "^0.3.0",
     "bs-jest-dom": "^1.0.0",
-    "bs-platform": "^4.0.6",
+    "bs-platform": "^4.0.5",
     "bs-react-testing-library": "^0.4.0",
     "jest-dom": "^2.1.0",
     "react-testing-library": "^5.2.0",
