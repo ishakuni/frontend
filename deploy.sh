@@ -22,6 +22,10 @@ END_JSON
 }
 
 do_deployment() {
+    yarn global add now
+    yarn run build
+    cp now.json build
+    cd build
     now -d --token $NOW_TOKEN && now alias ishakuni.com --token $NOW_TOKEN
 }
 

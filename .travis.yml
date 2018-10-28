@@ -13,15 +13,9 @@ cache:
 script:
   - yarn clean
   - yarn test
-before_deploy:
-  - yarn global add now
-  - yarn run build
-  - cp now.json build
-  - cd build
 deploy:
   - provider: script
-    script:
-      - bash deploy.sh
+    script: bash deploy.sh
     skip_cleanup: true
     on:
       master: true
