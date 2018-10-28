@@ -1,0 +1,15 @@
+{
+  "alias": [
+    "ishakuni.com"
+  ],
+  "public": true,
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "type": "static"
+}
