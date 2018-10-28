@@ -8,11 +8,8 @@ url="https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/deployments"
 create_deployment() {
     IFS='' read -r -d '' post_data <<-END_JSON
     {
-        "ref": "create-github-deployment",
-        "payload": {
-            "deploy": "migrate"
-        },
-        "description": "test deploy"
+        "ref": "master",
+        "description": "deploying ${TRAVIS_COMMIT}"
     }
 END_JSON
 
