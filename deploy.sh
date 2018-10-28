@@ -10,7 +10,7 @@ create_deployment() {
     {
         "ref": "master",
         "description": "deploying ${TRAVIS_COMMIT}",
-        "required_contexts": [],
+        "required_contexts": []
     }
 END_JSON
 
