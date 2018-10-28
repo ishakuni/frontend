@@ -21,8 +21,7 @@ before_deploy:
 deploy:
   - provider: script
     script:
-      - now -d --token $NOW_TOKEN
-      - now alias ishakuni.com
+      - now -d --token $NOW_TOKEN && now alias ishakuni.com --token $NOW_TOKEN
     skip_cleanup: true
     on:
       master: true
