@@ -13,6 +13,7 @@ cache:
 script:
   - yarn clean
   - yarn test
+  - bash deploy.sh
 before_deploy:
   - yarn global add now
   - yarn run build
