@@ -13,7 +13,6 @@ cache:
 script:
   - yarn clean
   - yarn test
-  - bash deploy.sh
 before_deploy:
   - yarn global add now
   - yarn run build
@@ -22,7 +21,7 @@ before_deploy:
 deploy:
   - provider: script
     script:
-      - now -d --token $NOW_TOKEN && now alias ishakuni.com --token $NOW_TOKEN
+      - bash deploy.sh
     skip_cleanup: true
     on:
       master: true
