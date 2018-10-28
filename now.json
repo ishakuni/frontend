@@ -3,6 +3,7 @@
     "ishakuni.com"
   ],
   "public": true,
+  "type": "static",
   "static": {
     "rewrites": [
       {
@@ -10,6 +11,5 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "type": "static"
+  }
 }
