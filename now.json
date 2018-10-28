@@ -1,0 +1,16 @@
+{
+  "name": "ishakuni-frontend",
+  "alias": [
+    "ishakuni.com"
+  ],
+  "public": true,
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

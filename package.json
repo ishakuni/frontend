@@ -14,7 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "bsb -clean-world",
-    "preclean": "rimraf lib .merlin"
+    "preclean": "rimraf build lib .merlin"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
