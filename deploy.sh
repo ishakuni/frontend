@@ -9,7 +9,8 @@ create_deployment() {
     IFS='' read -r -d '' post_data <<-END_JSON
     {
         "ref": "master",
-        "description": "deploying ${TRAVIS_COMMIT}"
+        "description": "deploying ${TRAVIS_COMMIT}",
+        "required_contexts": [],
     }
 END_JSON
 
@@ -38,5 +39,8 @@ END_JSON
 }
 
 create_deployment
+if [[ -z "$statuses_url" ]]; then
+    exit "failed to create deployment"
+fi
 do_deployment
 update_deployment_status
