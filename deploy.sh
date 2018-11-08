@@ -24,7 +24,9 @@ do_deployment() {
     yarn run build
     cp now.json build
     cd build
-    now -d --regions bru --token $NOW_TOKEN && now alias ishakuni.com --token $NOW_TOKEN
+    now -d --regions bru --token $NOW_TOKEN
+    now alias ishakuni.com --token $NOW_TOKEN
+    now alias www.ishakuni.com --token $NOW_TOKEN
 }
 
 update_deployment_status() {
