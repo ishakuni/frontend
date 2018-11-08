@@ -2,10 +2,10 @@
 
 let component = ReasonReact.statelessComponent("Footer");
 
-let make = (_children) => {
+let make = _children => {
   ...component,
-  render: (_self) =>
+  render: _self =>
     <div className="Footer">
-      (ReasonReact.string("Built with love by Pradip Caulagi"))
-    </div>
+      {ReasonReact.string("Built with love by Pradip Caulagi")}
+    </div>,
 };
