@@ -15,7 +15,7 @@ script:
   - yarn test
 deploy:
   - provider: script
-    script: bash deploy.sh
+    script: bash ci/deploy.sh
     skip_cleanup: true
     node_js: 8
     on:
