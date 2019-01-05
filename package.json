@@ -2,6 +2,12 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "email": "caulagi@gmail.com",
+    "name": "Pradip Caulagi",
+    "url": "https://caulagi.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
@@ -12,7 +18,6 @@
     "build": "react-scripts build",
     "pretest": "bsb -make-world",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "clean": "bsb -clean-world",
     "preclean": "rimraf build lib .merlin",
     "format": "bsrefmt --in-place src/**.re src/**/**.re"
@@ -34,5 +39,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ishakuni/frontend"
+  },
+  "bugs": {
+    "url": "https://github.com/ishakuni/frontend/issues"
+  }
 }
