@@ -9,29 +9,33 @@
   },
   "license": "MIT",
   "dependencies": {
+    "bs-css": "^8.0.0",
+    "gatsby": "^2.0.85",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "reason-react": "^0.5.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prestart": "bsb -make-world",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "pretest": "bsb -make-world",
-    "test": "react-scripts test",
+    "test": "yarn jest",
     "clean": "bsb -clean-world",
-    "preclean": "rimraf build lib .merlin",
+    "preclean": "rimraf build .cache .merlin lib public *.js static/js",
     "format": "bsrefmt --in-place src/**.re src/**/**.re"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
     "@glennsl/bs-jest": "^0.4.4",
+    "@wyze/gatsby-plugin": "^1.0.0",
     "bs-fetch": "^0.3.0",
     "bs-jest-dom": "^1.0.0",
     "bs-platform": "4.0.5",
     "bs-react-testing-library": "^0.4.0",
+    "gatsby-source-filesystem": "^2.0.12",
     "jest-dom": "^2.1.0",
     "react-testing-library": "^5.2.0",
-    "reason-scripts": "^1.0.0",
     "rimraf": "^2.6.2"
   },
   "browserslist": [

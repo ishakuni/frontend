@@ -1,31 +1,51 @@
 {
   "name": "ishakuni-frontend",
-  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
+  "version": "1.0.0",
   "sources": [
     {
-      "dir": "src"
-    },
-    {
-      "dir": "src/__tests__",
-      "type": "dev"
+      "dir": "src",
+      "subdirs": [
+        {
+          "dir": "components",
+          "subdirs": [
+            {
+              "dir": "__tests__",
+              "type": "dev"
+            }
+          ]
+        },
+        {
+          "dir": "pages",
+          "subdirs": [
+            {
+              "dir": "__tests__",
+              "type": "dev"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "reason": {
-    "react-jsx": 2
-  },
-  "refmt": 3,
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
+  "suffix": ".js",
+  "reason": {
+    "react-jsx": 2
+  },
   "bs-dependencies": [
-    "reason-react",
-    "bs-fetch"
+    "bs-css",
+    "reason-react"
   ],
   "bs-dev-dependencies": [
     "@glennsl/bs-jest",
     "bs-jest-dom",
     "bs-react-testing-library"
   ],
-  "suffix": ".bs.js"
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "refmt": 3
 }
