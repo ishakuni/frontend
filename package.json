@@ -23,7 +23,7 @@
     "test": "yarn jest",
     "clean": "bsb -clean-world",
     "preclean": "rimraf build .cache .merlin lib public *.js static/js",
-    "format": "bsrefmt --in-place src/**.re src/**/**.re"
+    "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
