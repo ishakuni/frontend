@@ -1,27 +1,22 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+node_modules
 
-# dependencies
-/node_modules
+# Logs
+*-error.log
 
-# testing
-/coverage
+# OSX
+.*DS_Store
 
-# production
-/build
+# Coverage
+coverage
 
-# bucklescript
-/lib
-/types
+# Build
+.cache
+lib
+public
+static/js
+.bsb.lock
+.env
 .merlin
-*.bs.js
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+**/*.bs.js
+*.js
