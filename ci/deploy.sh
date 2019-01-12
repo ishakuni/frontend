@@ -22,8 +22,8 @@ END_JSON
 do_deployment() {
     yarn global add now
     yarn run build
-    cp ci/now.json build
-    cd build
+    cp ci/now.json public
+    cd public
     now -d --regions bru --token $NOW_TOKEN
     now alias ishakuni.com --token $NOW_TOKEN
     now alias www.ishakuni.com --token $NOW_TOKEN
