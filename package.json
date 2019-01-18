@@ -36,7 +36,7 @@
     "gatsby-source-filesystem": "^2.0.16",
     "jest-dom": "^2.1.0",
     "react-testing-library": "^5.4.4",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   },
   "browserslist": [
     ">0.2%",
