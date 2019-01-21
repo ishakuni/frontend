@@ -26,7 +26,7 @@
     "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
     "@glennsl/bs-jest": "^0.4.4",
     "@wyze/gatsby-plugin": "^1.0.0",
     "bs-fetch": "^0.3.0",
