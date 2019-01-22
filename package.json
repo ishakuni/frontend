@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bs-css": "^8.0.0",
-    "gatsby": "^2.0.85",
+    "gatsby": "^2.0.91",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "reason-react": "^0.5.3"
