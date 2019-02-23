@@ -9,36 +9,42 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "run-p build:*",
+    "build": "run-s build:*",
     "build:bsb": "bsb -make-world",
-    "build:gatsy": "gatsby build",
+    "build:config": "rio -o gatsby-config.js src/config/gatsby.re",
+    "build:gatsby": "gatsby build",
+    "clean": "bsb -clean-world && rimraf .cache .merlin lib public *.js static/js",
+    "predev:gatsby": "yarn build:config",
     "dev": "run-p dev:*",
     "dev:bsb": "yarn build:bsb -w",
     "dev:gatsby": "gatsby develop",
-    "pretest": "bsb -make-world",
-    "test": "yarn jest",
-    "clean": "bsb -clean-world && rimraf build .cache .merlin lib public *.js static/js",
-    "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re"
+    "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re",
+    "prejest": "rio -o babel.config.js src/config/babel.re",
+    "jest": "jest",
+    "pretest": "yarn build:bsb",
+    "test": "yarn jest"
   },
   "dependencies": {
     "bs-css": "^8.0.1",
-    "gatsby": "^2.1.17",
+    "gatsby": "2.0.22",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "reason-react": "^0.5.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
     "@babel/plugin-transform-modules-commonjs": "^7.2.0",
     "@glennsl/bs-jest": "^0.4.7",
     "@wyze/gatsby-plugin": "^1.0.0",
-    "bs-fetch": "^0.3.1",
+    "@wyze/rio": "^1.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "bs-jest-dom": "^1.0.0",
     "bs-platform": "4.0.5",
     "bs-react-testing-library": "^0.4.0",
     "gatsby-source-filesystem": "^2.0.22",
     "jest-dom": "^3.1.2",
     "npm-run-all": "^4.1.5",
-    "react-testing-library": "^5.9.0",
     "rimraf": "^2.6.3"
   },
   "browserslist": [
@@ -50,5 +56,13 @@
   },
   "bugs": {
     "url": "https://github.com/ishakuni/frontend/issues"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@ahrefs/bs-dotenv|@glennsl/bs-jest|@wyze/bs-react-helmet|bs-|reason-react))"
+    ]
   }
 }
