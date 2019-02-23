@@ -13,7 +13,7 @@ Install [yarn](https://yarnpkg.com/en/docs/install) and use the following
   yarn
     Install dependencies
 
-  yarn start
+  yarn dev
     Starts the development server.
 
   yarn build
