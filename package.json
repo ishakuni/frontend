@@ -8,13 +8,6 @@
     "url": "https://caulagi.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "bs-css": "^8.0.1",
-    "gatsby": "^2.1.17",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "reason-react": "^0.5.3"
-  },
   "scripts": {
     "build": "run-p build:*",
     "build:bsb": "bsb -make-world",
@@ -26,6 +19,13 @@
     "test": "yarn jest",
     "clean": "bsb -clean-world && rimraf build .cache .merlin lib public *.js static/js",
     "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re"
+  },
+  "dependencies": {
+    "bs-css": "^8.0.1",
+    "gatsby": "^2.1.17",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "reason-react": "^0.5.3"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.2.0",
@@ -42,10 +42,7 @@
     "rimraf": "^2.6.3"
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    "cover 99.5%"
   ],
   "repository": {
     "type": "git",
