@@ -1,4 +1,5 @@
-[%%raw {|
+%raw
+{|
 module.exports = {
   env: {
     test: {
@@ -8,4 +9,4 @@ module.exports = {
     }
   }
 }
-|}];
+|};

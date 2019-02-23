@@ -9,10 +9,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "run-p build:*",
+    "build": "run-s build:*",
     "build:bsb": "bsb -make-world",
-    "build:gatsy": "gatsby build",
-    "clean": "bsb -clean-world && rimraf build .cache .merlin lib public *.js static/js",
+    "build:config": "rio -o gatsby-config.js src/config/gatsby.re",
+    "build:gatsby": "gatsby build",
+    "clean": "bsb -clean-world && rimraf .cache .merlin lib public *.js static/js",
+    "predev:gatsby": "yarn build:config",
     "dev": "run-p dev:*",
     "dev:bsb": "yarn build:bsb -w",
     "dev:gatsby": "gatsby develop",
@@ -24,7 +26,7 @@
   },
   "dependencies": {
     "bs-css": "^8.0.1",
-    "gatsby": "^2.1.17",
+    "gatsby": "2.0.22",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "reason-react": "^0.5.3"
