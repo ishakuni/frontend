@@ -1,5 +1,10 @@
+dist: xenial
 language: node_js
 node_js: 8
+
+# https://github.com/GoogleChrome/lighthouse/issues/7076#issuecomment-458611891
+addons:
+  chrome: stable
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -18,8 +23,12 @@ jobs:
     - stage: test
       node_js: 10
       script: yarn test
+    - stage: lighthouse
+      if: type = pull_request
+      install: yarn add --dev wait-for-now
+      script: yarn lh "$(wait-for-now)"
 
--deploy:
+deploy:
   provider: script
   script: bash create-alias.sh
   skip_cleanup: true
