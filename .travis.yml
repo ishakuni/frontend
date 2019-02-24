@@ -13,8 +13,6 @@ cache:
 
 jobs:
   include:
-    - stage: warm cache
-      script: true
     - stage: test
       script: yarn test
     - stage: test
