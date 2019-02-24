@@ -1,22 +1,34 @@
 language: node_js
-node_js:
-  - 8
-  - 10
+node_js: 8
+
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
+
 cache:
   yarn: true
   directories:
-    - node_modules
     - $HOME/.cache
-script:
-  - yarn clean
-  - yarn test
-deploy:
+    - public
+
+jobs:
+  include:
+    - stage: warm cache
+      script: true
+    - stage: test
+      script: yarn test
+    - stage: test
+      node_js: 10
+      script: yarn test
+    - stage: now
+      if: type = pull_request
+      install: yarn add --dev wait-for-now
+      script: wait-for-now
+
+-deploy:
   - provider: script
-    script: bash ci/deploy.sh
+    script: bash create-alias.sh
     skip_cleanup: true
     node_js: 8
     on:
-      master: true
+      - master: true
