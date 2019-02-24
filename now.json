@@ -2,6 +2,9 @@
   "version": 2,
   "name": "ishakuni-frontend",
   "public": true,
+  "regions": [
+    "bru"
+  ],
   "builds": [
     {
       "src": "./build-now.sh",
