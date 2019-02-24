@@ -22,9 +22,9 @@ jobs:
       script: yarn test
 
 -deploy:
-  - provider: script
-    script: bash create-alias.sh
-    skip_cleanup: true
-    node_js: 8
-    on:
-      - master: true
+  provider: script
+  script: bash create-alias.sh
+  skip_cleanup: true
+  node_js: 8
+  on:
+    master: true
