@@ -8,9 +8,10 @@
   "builds": [
     {
       "src": "./build-now.sh",
-      "use": "@now/static-build",
+      "use": "@now/static-build@canary",
       "config": {
-        "distDir": "./public"
+        "distDir": "./public",
+        "newPipeline": true
       }
     }
   ]
