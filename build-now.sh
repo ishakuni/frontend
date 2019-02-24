@@ -4,6 +4,7 @@ set -xe
 yum install -y wget
 basedir=`pwd`
 
+# install gcc (required for reasonml)
 cd /tmp
 wget https://dmmcy0pwk6bqi.cloudfront.net/gcc-4.8.5.tgz
 tar xvf gcc-4.8.5.tgz
