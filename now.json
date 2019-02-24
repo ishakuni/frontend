@@ -1,18 +1,22 @@
 {
-  "version": 2,
+  "version": 1,
   "name": "ishakuni-frontend",
   "public": true,
+  "static": {
+    "headers": [
+      {
+        "source": "**/*.@(ico|js|json|png|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      }
+    ]
+  },
   "regions": [
     "bru"
   ],
-  "builds": [
-    {
-      "src": "./build-now.sh",
-      "use": "@now/static-build@canary",
-      "config": {
-        "distDir": "./public",
-        "newPipeline": true
-      }
-    }
-  ]
+  "type": "static"
 }
