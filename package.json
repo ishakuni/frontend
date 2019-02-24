@@ -21,6 +21,7 @@
     "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re",
     "prejest": "rio -o babel.config.js src/config/babel.re",
     "jest": "jest",
+    "now-build": "build",
     "pretest": "yarn build:bsb",
     "test": "yarn jest"
   },
