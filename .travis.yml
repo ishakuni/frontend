@@ -23,7 +23,7 @@ jobs:
       install: yarn add --dev wait-for-now
       script: yarn lh "$(wait-for-now)"
 
--deploy:
+deploy:
   provider: script
   script: bash create-alias.sh
   skip_cleanup: true
