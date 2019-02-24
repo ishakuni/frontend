@@ -19,7 +19,6 @@
     "dev:gatsby": "gatsby develop",
     "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re",
     "jest": "jest",
-    "now-build": "build",
     "predev:gatsby": "yarn build:config",
     "prejest": "rio -o babel.config.js src/config/babel.re",
     "pretest": "yarn build:bsb",
