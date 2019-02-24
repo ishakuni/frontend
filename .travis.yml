@@ -20,10 +20,6 @@ jobs:
     - stage: test
       node_js: 10
       script: yarn test
-    - stage: now
-      if: type = pull_request
-      install: yarn add --dev wait-for-now
-      script: wait-for-now
 
 -deploy:
   - provider: script
