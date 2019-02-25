@@ -39,7 +39,7 @@
     "@wyze/gatsby-plugin": "^1.0.0",
     "@wyze/rio": "^1.1.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
     "bs-jest-dom": "^1.0.0",
     "bs-platform": "4.0.5",
     "bs-react-testing-library": "^0.4.0",
