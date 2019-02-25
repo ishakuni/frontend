@@ -25,8 +25,8 @@ jobs:
       script: yarn test
     - stage: lighthouse
       if: type = pull_request
-      install: yarn add --dev wait-for-now
-      script: yarn lh "$(wait-for-now)"
+      install: yarn add --dev lighthousebot wait-for-now
+      script: lighthousebot "$(wait-for-now)"
 
 deploy:
   provider: script
