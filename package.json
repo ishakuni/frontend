@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "bs-css": "^8.0.1",
-    "gatsby": "2.0.22",
+    "gatsby": "2.1.18",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "reason-react": "^0.5.3"
