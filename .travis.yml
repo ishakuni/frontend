@@ -25,7 +25,7 @@ jobs:
       script: yarn test
     - stage: lighthouse
       if: type = pull_request
-      install: yarn add --dev lighthousebot wait-for-now
+      install: yarn add --dev https://github.com/GoogleChromeLabs/lighthousebot wait-for-now
       script: lighthousebot "$(wait-for-now)"
 
 deploy:
