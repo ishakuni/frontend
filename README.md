@@ -20,5 +20,5 @@ Install [yarn](https://yarnpkg.com/en/docs/install) and use the following
     Bundles the app into static files for production.
 
   yarn test
-    Starts the test runner.
+    Run tests for project
 ```

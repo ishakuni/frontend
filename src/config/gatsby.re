@@ -2,7 +2,8 @@
 {|
 module.exports = {
   plugins: [
-    '@wyze/gatsby-plugin'
+    '@wyze/gatsby-plugin',
+    'gatsby-plugin-offline'
   ],
 }
 |};
