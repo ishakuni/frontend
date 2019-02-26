@@ -8,6 +8,7 @@ let make = _children => {
   ...component,
   render: _self =>
     <div className=footer>
-      {ReasonReact.string("Built with love by Pradip Caulagi")}
+      <Text text="Built with love by " />
+      <Link href="//twitter.com/@caulagi"> <Text text="@caulagi" /> </Link>
     </div>,
 };
