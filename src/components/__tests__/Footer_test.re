@@ -1,7 +1,5 @@
 open Jest;
-
 open JestDom;
-
 open ReactTestingLibrary;
 
 describe("Footer", () => {
