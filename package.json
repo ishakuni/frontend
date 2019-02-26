@@ -43,6 +43,7 @@
     "bs-jest-dom": "^1.0.0",
     "bs-platform": "4.0.5",
     "bs-react-testing-library": "^0.4.0",
+    "gatsby-plugin-manifest": "^2.0.19",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-source-filesystem": "^2.0.22",
     "jest-dom": "^3.1.2",
