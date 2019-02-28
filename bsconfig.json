@@ -42,7 +42,8 @@
   "bs-dev-dependencies": [
     "@glennsl/bs-jest",
     "bs-jest-dom",
-    "bs-react-testing-library"
+    "bs-react-testing-library",
+    "bs-react-test-renderer"
   ],
   "bsc-flags": [
     "-bs-no-version-header",

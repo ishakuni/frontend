@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEO renders with proper meta tags 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+  title="title"
+>
+  <html
+    lang="en"
+  />
+  <meta
+    content="desc"
+    name="description"
+  />
+  <meta
+    content="https://ishakuni.com/"
+    property="og:url"
+  />
+  <meta
+    content="https://ishakuni.com/icons/icon-512x512.png"
+    property="og:image"
+  />
+  <meta
+    content="title"
+    name="og:title"
+  />
+  <meta
+    content="desc"
+    name="og:description"
+  />
+  <meta
+    content="summary"
+    name="twitter:card"
+  />
+  <meta
+    content="title"
+    name="twitter:title"
+  />
+  <meta
+    content="desc"
+    name="twitter:description"
+  />
+  <meta
+    content="https://ishakuni.com/icons/icon-512x512.png"
+    name="twitter:image"
+  />
+</HelmetWrapper>
+`;

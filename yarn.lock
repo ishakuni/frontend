@@ -2488,6 +2488,13 @@ bs-platform@4.0.5:
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.5.tgz#d4fd9bbdd11765af5b75110a5655065ece05eed6"
   integrity sha512-wK+yUx/5ojlrxgk/EB3Hla7+9NEnE8PxtGb71e4IsKnWPXrRAaVtdTuoWWClv8z77xntOFg8qTgYfYyh9xLMWA==
 
+bs-react-test-renderer@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bs-react-test-renderer/-/bs-react-test-renderer-2.0.0.tgz#a2f60f988e348dd83b2acd910bb1348508c9ece9"
+  integrity sha512-5wSV7Cn9LiNqnF4ztYrvyd1HQgqfHzVsVruf2YcVTLptTDAY1h4pLeXS/DCVtAEq3GXbhsXK1dzX6HRdPrlcDg==
+  dependencies:
+    react-test-renderer "^16.2.0"
+
 bs-react-testing-library@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/bs-react-testing-library/-/bs-react-testing-library-0.4.0.tgz#096bcc12f1023290ac393d763d0a108d6d678256"
@@ -9668,7 +9675,7 @@ react-hot-loader@^4.1.0:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-is@^16.8.1:
+react-is@^16.8.1, react-is@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
   integrity sha512-Y4rC1ZJmsxxkkPuMLwvKvlL1Zfpbcu+Bf4ZigkHup3v9EfdYhAlWAaVyA19olXq2o2mGn0w+dFKvk3pVVlYcIA==
@@ -9685,6 +9692,16 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
+
+react-test-renderer@^16.2.0:
+  version "16.8.3"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.8.3.tgz#230006af264cc46aeef94392e04747c21839e05e"
+  integrity sha512-rjJGYebduKNZH0k1bUivVrRLX04JfIQ0FKJLPK10TAb06XWhfi4gTobooF9K/DEFNW98iGac3OSxkfIJUN9Mdg==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    react-is "^16.8.3"
+    scheduler "^0.13.3"
 
 react-testing-library@^5.2.0:
   version "5.9.0"
