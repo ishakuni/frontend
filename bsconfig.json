@@ -36,7 +36,8 @@
   },
   "bs-dependencies": [
     "bs-css",
-    "reason-react"
+    "reason-react",
+    "@moox/bs-react-helmet"
   ],
   "bs-dev-dependencies": [
     "@glennsl/bs-jest",
