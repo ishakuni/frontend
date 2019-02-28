@@ -24,7 +24,7 @@ jobs:
       node_js: 10
       script: yarn test
     - stage: code coverage
-      if: type = push
+      if: type = pull_request
       install: yarn add --dev coveralls
       script: yarn test --maxWorkers=2 --coverage --coverageReporters=text-lcov | coveralls
     - stage: lighthouse
