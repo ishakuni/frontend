@@ -1,6 +1,7 @@
 # ishakuni
 
 [![Build Status](https://travis-ci.org/ishakuni/frontend.svg?branch=master)](https://travis-ci.org/ishakuni/frontend)
+[![Coverage Status](https://coveralls.io/repos/github/ishakuni/frontend/badge.svg?branch=master)](https://coveralls.io/github/ishakuni/frontend?branch=master)
 
 This project provides the frontend for iShakuni
 
