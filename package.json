@@ -69,7 +69,7 @@
       "src"
     ],
     "transformIgnorePatterns": [
-      "/node_modules/(?!(@ahrefs/bs-dotenv|@glennsl/bs-jest|@wyze/bs-react-helmet|bs-|reason-react))"
+      "/node_modules/(?!(@ahrefs/bs-dotenv|@glennsl/bs-jest|@moox/bs-react-helmet|bs-|reason-react))"
     ]
   }
 }
