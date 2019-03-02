@@ -2461,10 +2461,10 @@ browserslist@^4.0.0, browserslist@^4.3.4:
     electron-to-chromium "^1.3.113"
     node-releases "^1.1.8"
 
-bs-css@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-8.0.1.tgz#de86fefe852977097ce13bf3981d6ca346efd256"
-  integrity sha512-361ngcZAjQCweRh4jDqmh3bv63BRIdZ+JzodP4RWgq5vjDpqRQGhwI6Se9zqdXuqjN2P4+yD6jbQgrRq08yyJw==
+bs-css@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-8.0.2.tgz#04e84b6cbdfe873b39367b90887de8bf46057f7a"
+  integrity sha512-aMsEMmuR2F9gmQMCDja+oMUJzOvEoHcymHlYRQueKxELmghtXqSrw+Z+Bsz/umr/+tuhiQ322z0f6NNL8mfUig==
   dependencies:
     emotion "^9.2.12"
 

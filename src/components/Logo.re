@@ -13,6 +13,7 @@ let logo =
         bounce,
       ),
       height @@ px(60),
+      marginBottom @@ em(1.4),
     ])
   );
 
