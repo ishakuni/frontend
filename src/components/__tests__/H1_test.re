@@ -18,6 +18,6 @@ describe("<H1 />", () => {
     ->render
     ->(getByText(~matcher=`Str("Heading")))
     ->expect
-    ->(toHaveClass("css-c3eneo"))
+    ->(toHaveClass("css-1ma36i7"))
   );
 });
