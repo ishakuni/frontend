@@ -28,7 +28,7 @@ global(
   "body",
   [
     color @@ hsl(200, 16, 16),
-    fontSize @@ Calc.(px(16) + vw(0.4)),
+    fontSize @@ Calc.(px(14) + vw(0.4)),
     fontFamily("Lato, Roboto, san-serif"),
   ],
 );
