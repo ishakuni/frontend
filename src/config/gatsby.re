@@ -17,6 +17,14 @@ module.exports = {
         include_favicon: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto', 'Lato']
+        }
+      }
+    },
     '@wyze/gatsby-plugin',
     'gatsby-plugin-manifest',
     'gatsby-plugin-offline',
