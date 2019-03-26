@@ -1,34 +1,38 @@
 open Jest;
 open JestDom;
+open Expect;
 open ReactTestingLibrary;
 
 [@bs.get] external textContent: Dom.element => string = "";
 
 describe("404 page", () => {
   test("renders with a exclamation", () =>
-    <Http404 />
-    |> render
-    |> getByText(~matcher=`Str("404!"))
+    (<Http404 /> |> render |> getByText(~matcher=`Str("404!")))->Some
     |> expect
     |> toBeInTheDocument
   );
 
   test("renders with a message", () =>
-    <Http404 />
-    |> render
-    |> getByText(
-         ~matcher=
-           `Func(
-             (_text, el) =>
-               el |> textContent === "Oops...that page doesn't exist!",
-           ),
-       )
+    (
+      <Http404 />
+      |> render
+      |> getByText(
+           ~matcher=
+             `Func(
+               (_text, el) =>
+                 el |> textContent === "Oops...that page doesn't exist!",
+             ),
+         )
+    )
+    ->Some
     |> expect
     |> toBeInTheDocument
   );
 
   test("renders logo", () =>
-    <Http404 /> |> render |> getByTitle("logo") |> expect |> toBeInTheDocument
+    (<Http404 /> |> render |> getByTitle("logo"))->Some
+    |> expect
+    |> toBeInTheDocument
   );
 
   test("exports default component", () => {
@@ -41,6 +45,6 @@ describe("404 page", () => {
         );
     };
 
-    <Default /> |> render |> container |> expect |> toBeInTheDocument;
+    (<Default /> |> render |> container)->Some |> expect |> toBeInTheDocument;
   });
 });
