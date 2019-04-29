@@ -2731,10 +2731,10 @@ bs-dom-testing-library@^0.4.1:
   dependencies:
     dom-testing-library "^3.19.0"
 
-bs-jest-dom@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/bs-jest-dom/-/bs-jest-dom-2.0.0.tgz#a5311326f473bd353eda77964a0c75c4666702ac"
-  integrity sha512-Q/cnUTCC1fqDGi7myFP3tVqW2YSXv0UFZmHL1qz5G4tUAW3AqqxpToIc4Jzt8pjTB4sJ7bPt5sj0cRW+1nS4HA==
+bs-jest-dom@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/bs-jest-dom/-/bs-jest-dom-2.0.1.tgz#8aabe5a7910db4a4f9e9fb77014b8e33f61e5e13"
+  integrity sha512-BgO+oQQqa13HEuMI3xGk1WDMdZA61/8zcc6PA+gdFhz5MMYTeCMsx9pzVu9YCTPDvv1U2QpE38SU9BNUDR94kA==
   dependencies:
     "@glennsl/bs-jest" "^0.4.8"
     jest-dom "^3.1.2"
