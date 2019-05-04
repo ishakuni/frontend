@@ -5,6 +5,6 @@ open ReactTestingLibrary;
 
 describe("Index page", () =>
   test("renders", () =>
-    (<Index /> |> render |> container)->Some |> expect |> toBeInTheDocument
+    <Index /> |> render |> container |> expect |> toBeInTheDocument
   )
 );

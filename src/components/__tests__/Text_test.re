@@ -5,7 +5,9 @@ open ReactTestingLibrary;
 
 describe("<Text />", () =>
   test("renders", () =>
-    (<Text text="text" /> |> render |> container)->Some
+    <Text text="text" />
+    |> render
+    |> container
     |> expect
     |> toHaveTextContent("text")
   )
