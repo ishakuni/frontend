@@ -7,32 +7,29 @@ open ReactTestingLibrary;
 
 describe("404 page", () => {
   test("renders with a exclamation", () =>
-    (<Http404 /> |> render |> getByText(~matcher=`Str("404!")))->Some
+    <Http404 />
+    |> render
+    |> getByText(~matcher=`Str("404!"))
     |> expect
     |> toBeInTheDocument
   );
 
   test("renders with a message", () =>
-    (
-      <Http404 />
-      |> render
-      |> getByText(
-           ~matcher=
-             `Func(
-               (_text, el) =>
-                 el |> textContent === "Oops...that page doesn't exist!",
-             ),
-         )
-    )
-    ->Some
+    <Http404 />
+    |> render
+    |> getByText(
+         ~matcher=
+           `Func(
+             (_text, el) =>
+               el |> textContent === "Oops...that page doesn't exist!",
+           ),
+       )
     |> expect
     |> toBeInTheDocument
   );
 
   test("renders logo", () =>
-    (<Http404 /> |> render |> getByTitle("logo"))->Some
-    |> expect
-    |> toBeInTheDocument
+    <Http404 /> |> render |> getByTitle("logo") |> expect |> toBeInTheDocument
   );
 
   test("exports default component", () => {
@@ -45,6 +42,6 @@ describe("404 page", () => {
         );
     };
 
-    (<Default /> |> render |> container)->Some |> expect |> toBeInTheDocument;
+    <Default /> |> render |> container |> expect |> toBeInTheDocument;
   });
 });
