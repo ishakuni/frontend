@@ -24,6 +24,7 @@ jobs:
       node_js: 10
       script: yarn test
     - stage: lighthouse
+      node_js: 10
       if: type = pull_request
       install: yarn add --dev https://github.com/GoogleChromeLabs/lighthousebot wait-for-now
       script: lighthousebot "$(wait-for-now)"
