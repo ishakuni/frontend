@@ -16,6 +16,6 @@ describe("Footer", () => {
       <Footer /> |> render |> getByText(~matcher=`Str("@caulagi"));
     source
     |> expect
-    |> toHaveAttribute("href", ~value="//twitter.com/@caulagi");
+    |> toHaveAttribute("href", ~value="//twitter.com/caulagi");
   });
 });
