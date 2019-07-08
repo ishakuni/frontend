@@ -7,6 +7,6 @@ let make = _children => {
   render: _self =>
     <div className=footer>
       <Text text="Built with love by " />
-      <Link href="//twitter.com/@caulagi"> <Text text="@caulagi" /> </Link>
+      <Link href="//twitter.com/caulagi"> <Text text="@caulagi" /> </Link>
     </div>,
 };
