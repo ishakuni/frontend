@@ -1,9 +1,6 @@
 name: Deploy master
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
@@ -23,4 +20,4 @@ jobs:
           now alias ishakuni.com
           now alias www.ishakuni.com
         env:
-          ZEIT_TOKEN: ${{secrets.zeit_token}}
+          TOKEN: ${{secrets.zeit_token}}
