@@ -1,0 +1,26 @@
+name: Deploy master
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name:
+        run: |
+          yarn global add now
+          now --regions bru --prod --name ishakuni-frontend
+          now alias ishakuni.com
+          now alias www.ishakuni.com
+        env:
+          ZEIT_TOKEN: ${{secrets.zeit_token}}
