@@ -15,7 +15,6 @@ jobs:
           node-version: 12
       - name:
         run: |
-          yarn global add now
           now --regions bru --prod --name ishakuni-frontend
           now alias ishakuni.com
           now alias www.ishakuni.com
