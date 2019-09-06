@@ -19,16 +19,3 @@ jobs:
       - run: npm test
         env:
           CI: true
-
-  deploy:
-    name: Deploy master
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: bash create-deployment.sh
-        env:
-          ZEIT_TOKEN: ${{secrets.zeit_token}}
