@@ -29,7 +29,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: now -v
-      - run: now --regions bru --name ishakuni-frontend --token ${{secrets.zeit_token}}
-      - run: now alias ishakuni.com --token ${{secrets.zeit_token}}
-      - run: now alias www.ishakuni.com --token ${{secrets.zeit_token}}
+      - run: bash create-deployment.sh
+        env:
+          ZEIT_TOKEN: ${{secrets.zeit_token}}
