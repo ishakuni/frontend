@@ -1,15 +1,13 @@
 # ishakuni
 
-[![Build Status](https://travis-ci.org/ishakuni/frontend.svg?branch=master)](https://travis-ci.org/ishakuni/frontend)
-
-This project provides the frontend for iShakuni
+![](https://github.com/ishakuni/frontend/workflows/iShakuni%20Build%20Status/badge.svg)
 
 
 ### Local development
 
 Install [yarn](https://yarnpkg.com/en/docs/install) and use the following
 
-```bash
+```shell
   yarn
     Install dependencies
 
