@@ -1,0 +1,35 @@
+name: iShakuni
+
+on: [push]
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm test
+        env:
+          CI: true
+
+  deploy:
+    name: Deploy master
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: now -v
+      - run: now --regions bru --name ishakuni-frontend --token ${{secrets.zeit_token}}
+      - run: now alias ishakuni.com --token ${{secrets.zeit_token}}
+      - run: now alias www.ishakuni.com --token ${{secrets.zeit_token}}
