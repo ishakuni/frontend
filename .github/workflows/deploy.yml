@@ -15,8 +15,6 @@ jobs:
           node-version: 12
       - name:
         run: |
-          now --regions bru --prod --name ishakuni-frontend
-          now alias ishakuni.com
-          now alias www.ishakuni.com
-        env:
-          TOKEN: ${{secrets.zeit_token}}
+          now --regions bru --prod --name ishakuni-frontend --token ${{secrets.zeit_token}}
+          now alias ishakuni.com --token ${{secrets.zeit_token}}
+          now alias www.ishakuni.com --token
