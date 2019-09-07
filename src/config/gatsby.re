@@ -25,7 +25,6 @@ module.exports = {
         }
       }
     },
-    '@wyze/gatsby-plugin',
     'gatsby-plugin-manifest',
     'gatsby-plugin-offline',
   ],

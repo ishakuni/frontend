@@ -1450,11 +1450,6 @@
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
 
-"@wyze/gatsby-plugin@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@wyze/gatsby-plugin/-/gatsby-plugin-1.0.0.tgz#6e8f5b34555dd69803dd95ec27188789ca643976"
-  integrity sha512-vDuEoALpOq0VlS2J/hHFMp7O/ISaCKoqQJsrbRbz54niZnhpfpE77QxlpxzK5UyT1h38K3szK9n4oJTEK8B65g==
-
 "@wyze/rio@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@wyze/rio/-/rio-1.2.0.tgz#9f642f9334b98bd0fcf932682fe83a6e7d624748"
