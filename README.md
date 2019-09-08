@@ -1,6 +1,6 @@
 # ishakuni
 
-![](https://github.com/ishakuni/frontend/workflows/iShakuni%20Build%20Status/badge.svg)
+![](https://github.com/ishakuni/frontend/workflows/Build%20Status/badge.svg)
 
 
 ### Local development
