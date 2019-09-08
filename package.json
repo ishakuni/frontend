@@ -17,16 +17,16 @@
     "build:gatsby": "gatsby build",
     "clean": "bsb -clean-world && rimraf .cache .merlin lib public *.js static/js",
     "dev": "run-p dev:*",
-    "dev:bsb": "yarn build:bsb -w",
+    "dev:bsb": "npm run build:bsb -w",
     "dev:gatsby": "gatsby develop",
     "format": "bsrefmt --in-place src/**/**.re src/**/__tests__/**.re",
     "jest": "jest",
     "lh": "lighthouse-ci",
-    "predev:gatsby": "yarn build:config",
+    "predev:gatsby": "npm run build:config",
     "prejest": "rio -o babel.config.js src/config/babel.re",
-    "pretest": "yarn build:bsb",
+    "pretest": "npm run build:bsb",
     "serve": "gatsby serve",
-    "test": "yarn jest"
+    "test": "npm run jest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
