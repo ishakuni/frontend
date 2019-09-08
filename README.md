@@ -5,18 +5,18 @@
 
 ### Local development
 
-Install [yarn](https://yarnpkg.com/en/docs/install) and use the following
+Install [node 8](https://nodejs.org/dist/latest-v8.x/) and use the following
 
 ```shell
-  yarn
+  npm install
     Install dependencies
 
-  yarn dev
+  npm run dev
     Starts the development server.
 
-  yarn build
+  npm run build
     Bundles the app into static files for production.
 
-  yarn test
+  npm run test
     Run tests for project
 ```
