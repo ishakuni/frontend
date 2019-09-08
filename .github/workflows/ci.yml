@@ -1,4 +1,4 @@
-name: iShakuni Build Status
+name: Build Status
 
 on: [push]
 
