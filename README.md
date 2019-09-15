@@ -5,7 +5,7 @@
 
 ### Local development
 
-Install [node 8](https://nodejs.org/dist/latest-v8.x/) and use the following
+Install [node 10](https://nodejs.org/dist/latest-v10.x/) and use the following
 
 ```shell
   npm install
