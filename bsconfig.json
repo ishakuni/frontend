@@ -28,10 +28,10 @@
     }
   ],
   "package-specs": {
-    "module": "es6",
-    "in-source": true
+    "module": "commonjs",
+    "in-source": false
   },
-  "suffix": ".bs.js",
+  "suffix": ".js",
   "reason": {
     "react-jsx": 2
   },

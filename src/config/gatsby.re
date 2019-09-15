@@ -3,6 +3,12 @@
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `src/pages`
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `iShakuni`,
@@ -25,8 +31,6 @@ module.exports = {
         }
       }
     },
-    '@wyze/gatsby-plugin',
-    'gatsby-plugin-manifest',
     'gatsby-plugin-offline',
   ],
 }
