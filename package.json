@@ -33,7 +33,7 @@
     "test": "npm run jest"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "@glennsl/bs-jest": "^0.4.9",
     "@moox/bs-react-helmet": "^1.1.3",
