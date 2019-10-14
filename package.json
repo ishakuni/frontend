@@ -49,7 +49,7 @@
     "gatsby": "2.0.22",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.1.0",
-    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.6",
     "husky": "^3.0.8",
