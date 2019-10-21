@@ -43,7 +43,7 @@
     "babel-jest": "^25.0.0",
     "bs-css": "^8.0.4",
     "bs-jest-dom": "^2.0.1",
-    "bs-platform": "^5.0.6",
+    "bs-platform": "^5.2.1",
     "bs-react-test-renderer": "^2.0.0",
     "bs-react-testing-library": "^0.6.0",
     "gatsby": "2.0.22",
