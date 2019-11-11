@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
-    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
     "@glennsl/bs-jest": "^0.4.9",
     "@moox/bs-react-helmet": "^1.1.3",
     "@wyze/gatsby-plugin": "^1.0.0",
