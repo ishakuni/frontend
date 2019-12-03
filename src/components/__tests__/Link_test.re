@@ -23,14 +23,14 @@ describe("<Link />", () => {
   );
 
   /* test("renders with className", () =>
-    <Link className=Css.style([Css.color(Css.rebeccapurple)]) href>
-      {ReasonReact.string("A link")}
-    </Link>
-    |> render
-    |> getByText(~matcher=`Str("A link"))
-    |> expect
-    |> toHaveClass("css-6oydka")
-  ); */
+       <Link className=Css.style([Css.color(Css.rebeccapurple)]) href>
+         {ReasonReact.string("A link")}
+       </Link>
+       |> render
+       |> getByText(~matcher=`Str("A link"))
+       |> expect
+       |> toHaveClass("css-6oydka")
+     ); */
 
   test("renders with title", () =>
     <Link href title="Test"> {ReasonReact.string("A link")} </Link>
