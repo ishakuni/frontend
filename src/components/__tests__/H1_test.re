@@ -13,7 +13,7 @@ describe("<H1 />", () => {
   );
 
   test("renders with className", () =>
-    <H1 className=Css.[color(rebeccapurple)]>
+    <H1 className=Css.(color(rebeccapurple))>
       {ReasonReact.string("Heading")}
     </H1>
     |> render

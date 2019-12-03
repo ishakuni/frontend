@@ -12,7 +12,7 @@ let make = (~className=Css.empty, ~href, ~title="", children) => {
   ...component,
   render: _ =>
     <a
-      className={Css.style(styles @ className)}
+      className=styles->Css.style
       href
       rel="noopener noreferrer"
       target="_blank"

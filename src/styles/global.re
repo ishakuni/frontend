@@ -27,8 +27,8 @@ global(
 global(
   "body",
   [
-    color @@ hsl(200, 16, 16),
+    color(rgb(34, 43, 47)),
     fontSize @@ Calc.(px(14) + vw(0.4)),
-    fontFamily("Lato, Roboto, san-serif"),
+    fontFamilies([`custom("Lato"), `custom("Roboto"), `sansSerif]),
   ],
 );
