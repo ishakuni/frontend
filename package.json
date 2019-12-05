@@ -55,6 +55,7 @@
     "husky": "^3.1.0",
     "jest-dom": "^4.0.0",
     "lighthouse-ci": "^1.10.0",
+    "lint-staged": "^9.5.0",
     "npm-run-all": "^4.1.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -78,6 +79,17 @@
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!(@ahrefs/bs-dotenv|@glennsl/bs-jest|@moox/bs-react-helmet|bs-|reason-react))"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.re": [
+      "bsrefmt --in-place",
+      "git add"
     ]
   }
 }
