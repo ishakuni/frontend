@@ -33,7 +33,7 @@
   },
   "suffix": ".bs.js",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "bs-dependencies": [
     "bs-css",

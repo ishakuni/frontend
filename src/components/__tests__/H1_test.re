@@ -13,12 +13,12 @@ describe("<H1 />", () => {
   );
 
   test("renders with className", () =>
-    <H1 className=Css.[color(rebeccapurple)]>
+    <H1 className=Css.(style([color(rebeccapurple)]))>
       {ReasonReact.string("Heading")}
     </H1>
     |> render
     |> getByText(~matcher=`Str("Heading"))
     |> expect
-    |> toHaveClass("css-1ma36i7")
+    |> toHaveClass("css-1kdzury css-1pm6ghi")
   );
 });
