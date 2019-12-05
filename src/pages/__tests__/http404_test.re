@@ -31,17 +31,4 @@ describe("404 page", () => {
   test("renders logo", () =>
     <Http404 /> |> render |> getByTitle("logo") |> expect |> toBeInTheDocument
   );
-
-  test("exports default component", () => {
-    module Default = {
-      let make = _ =>
-        ReasonReact.wrapJsForReason(
-          ~reactClass=Http404.default,
-          ~props=Js.Obj.empty(),
-          [||],
-        );
-    };
-
-    <Default /> |> render |> container |> expect |> toBeInTheDocument;
-  });
 });

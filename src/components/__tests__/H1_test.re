@@ -19,6 +19,6 @@ describe("<H1 />", () => {
     |> render
     |> getByText(~matcher=`Str("Heading"))
     |> expect
-    |> toHaveClass("css-1ma36i7")
+    |> toHaveClass("css-1kdzury css-1pm6ghi")
   );
 });
