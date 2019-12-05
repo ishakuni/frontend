@@ -1,5 +1,3 @@
-let component = ReasonReact.statelessComponent("Link");
-
 let styles =
   Css.[
     color @@ hex("8b008b"),
@@ -8,15 +6,16 @@ let styles =
     hover([color @@ hex("8b0000")]),
   ];
 
-let make = (~className=Css.empty, ~href, ~title="", children) => {
-  ...component,
-  render: _ =>
-    <a
-      className={styles->Css.style}
-      href
-      rel="noopener noreferrer"
-      target="_blank"
-      title>
-      <Fragment> ...children </Fragment>
-    </a>,
+[@react.component]
+let make = (~className=Css.empty, ~href, ~title="", ~children) => {
+  <a
+    className={styles->Css.style}
+    href
+    rel="noopener noreferrer"
+    target="_blank"
+    title>
+    children
+  </a>;
 };
+
+let default = make;

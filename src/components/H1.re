@@ -1,12 +1,16 @@
-let component = ReasonReact.statelessComponent("H1");
-
 let styles =
-  Css.[fontSize @@ em(2.0), fontFamilies([`custom("Roboto"), `sansSerif])];
+  Css.(
+    style([
+      fontSize @@ em(2.0),
+      fontFamilies([`custom("Roboto"), `sansSerif]),
+    ])
+  );
 
-let make = (~className=Css.empty, children) => {
-  ...component,
-  render: _ =>
-    <h1 className=Css.(style(styles @ className))>
-      <Fragment> ...children </Fragment>
-    </h1>,
+let cn = cns => cns->Belt.List.keep(x => x !== "")->String.concat(" ", _);
+
+[@react.component]
+let make = (~className="", ~children) => {
+  <h1 className={cn([styles, className])}> children </h1>;
 };
+
+let default = make;
