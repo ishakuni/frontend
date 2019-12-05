@@ -19,7 +19,6 @@ let default = make;
 
 module Jsx2 = {
   let component = ReasonReact.statelessComponent("index");
-  /* `children` is not labelled, as it is a regular parameter in version 2 of JSX */
   let make = children =>
     ReasonReactCompat.wrapReactForReasonReact(make, makeProps(), children);
 };
