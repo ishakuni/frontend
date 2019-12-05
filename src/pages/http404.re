@@ -20,6 +20,8 @@ let make = () => {
   </div>;
 };
 
+let default = make;
+
 module Jsx2 = {
   let component = ReasonReact.statelessComponent("404");
   /* `children` is not labelled, as it is a regular parameter in version 2 of JSX */
