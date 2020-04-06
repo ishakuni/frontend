@@ -40,7 +40,7 @@
     "@wyze/gatsby-plugin": "^1.0.0",
     "@wyze/rio": "^1.3.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^25.2.4",
+    "babel-jest": "^25.2.6",
     "bs-css": "https://github.com/SentiaAnalytics/bs-css#8b516f628bdf8a56bcffafc0849e6f49deab645b",
     "bs-jest-dom": "^2.0.1",
     "bs-platform": "^7.2.2",
