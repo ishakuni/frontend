@@ -41,7 +41,7 @@
     "@wyze/rio": "^1.4.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.3.0",
-    "bs-css": "https://github.com/SentiaAnalytics/bs-css#8b516f628bdf8a56bcffafc0849e6f49deab645b",
+    "bs-css": "^12.1.0",
     "bs-jest-dom": "^2.0.1",
     "bs-platform": "^7.2.2",
     "bs-react-test-renderer": "^2.0.0",
