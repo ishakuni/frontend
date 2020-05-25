@@ -37,6 +37,7 @@
   },
   "bs-dependencies": [
     "bs-css",
+    "bs-css-emotion",
     "reason-react",
     "@moox/bs-react-helmet"
   ],
