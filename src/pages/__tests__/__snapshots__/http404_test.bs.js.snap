@@ -8,6 +8,14 @@ Array [
 ]
 `;
 
+exports[`404 page renders with a exclamation 1`] = `
+<h1
+  class="css-1kdzury"
+>
+  404!
+</h1>
+`;
+
 exports[`404 page renders with a message 1`] = `
 Array [
   <div>

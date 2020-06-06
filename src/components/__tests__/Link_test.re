@@ -1,5 +1,4 @@
 open Jest;
-open JestDom;
 open Expect;
 open ReactTestingLibrary;
 
