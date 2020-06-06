@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> renders as a link 1`] = `
+<a
+  class="css-4txxhf"
+  href="//site.local/test"
+  rel="noopener noreferrer"
+  target="_blank"
+  title=""
+>
+  A link
+</a>
+`;
+
+exports[`<Link /> renders with className 1`] = `
+Array [
+  <a
+    class="css-4txxhf"
+    href="//site.local/test"
+    rel="noopener noreferrer"
+    target="_blank"
+    title=""
+  >
+    A link
+  </a>,
+  <a
+    class="css-4txxhf css-1pm6ghi"
+    href="//site.local/test"
+    rel="noopener noreferrer"
+    target="_blank"
+    title=""
+  >
+    A link
+  </a>,
+]
+`;
+
+exports[`<Link /> renders with title 1`] = `
+<a
+  class="css-4txxhf"
+  href="//site.local/test"
+  rel="noopener noreferrer"
+  target="_blank"
+  title="Test"
+>
+  A link
+</a>
+`;

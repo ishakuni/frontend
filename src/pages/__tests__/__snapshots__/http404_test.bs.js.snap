@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page renders logo 1`] = `
+Array [
+  <title>
+    logo
+  </title>,
+]
+`;
+
+exports[`404 page renders with a message 1`] = `
+Array [
+  <div>
+    Oops...that page doesn't exist!
+  </div>,
+  <div>
+    Oops...that page doesn't exist!
+  </div>,
+]
+`;

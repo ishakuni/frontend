@@ -3,11 +3,13 @@ open JestDom;
 open Expect;
 open ReactTestingLibrary;
 
-[@bs.get] external textContent: Dom.element => string = "";
+[@bs.get] external textContent: Dom.element => string;
 
 describe("404 page", () => {
+  let el = <Http404 />;
+
   test("renders with a exclamation", () =>
-    <Http404 />
+    el
     |> render
     |> getByText(~matcher=`Str("404!"))
     |> expect
@@ -15,9 +17,9 @@ describe("404 page", () => {
   );
 
   test("renders with a message", () =>
-    <Http404 />
+    el
     |> render
-    |> getByText(
+    |> getAllByText(
          ~matcher=
            `Func(
              (_text, el) =>
@@ -25,10 +27,14 @@ describe("404 page", () => {
            ),
        )
     |> expect
-    |> toBeInTheDocument
+    |> toMatchSnapshot
   );
 
   test("renders logo", () =>
-    <Http404 /> |> render |> getByTitle("logo") |> expect |> toBeInTheDocument
+    el
+    |> render
+    |> queryAllByTitle(~matcher=`Str("logo"))
+    |> expect
+    |> toMatchSnapshot
   );
 });

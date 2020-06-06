@@ -9,7 +9,7 @@ describe("<H1 />", () => {
     |> render
     |> getByText(~matcher=`Str("Heading"))
     |> expect
-    |> toBeInTheDocument
+    |> toMatchSnapshot
   );
 
   test("renders with className", () =>
@@ -17,8 +17,8 @@ describe("<H1 />", () => {
       {ReasonReact.string("Heading")}
     </H1>
     |> render
-    |> getByText(~matcher=`Str("Heading"))
+    |> getAllByText(~matcher=`Str("Heading"))
     |> expect
-    |> toHaveClass("css-1kdzury css-1pm6ghi")
+    |> toMatchSnapshot
   );
 });

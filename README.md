@@ -17,6 +17,9 @@ Install [node 10](https://nodejs.org/dist/latest-v10.x/) and use the following
   npm run build
     Bundles the app into static files for production.
 
-  npm run test
+  npm run test:ci
     Run tests for project
+
+  npm run test:dev
+    Run tests for project and update snapshots
 ```

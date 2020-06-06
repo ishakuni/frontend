@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<H1 /> renders 1`] = `
+<h1
+  class="css-1kdzury"
+>
+  Heading
+</h1>
+`;
+
+exports[`<H1 /> renders with className 1`] = `
+Array [
+  <h1
+    class="css-1kdzury"
+  >
+    Heading
+  </h1>,
+  <h1
+    class="css-1kdzury css-1pm6ghi"
+  >
+    Heading
+  </h1>,
+]
+`;

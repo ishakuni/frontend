@@ -30,7 +30,8 @@
     "prejest": "rio -o babel.config.js src/config/babel.re",
     "pretest": "npm run build:bsb",
     "serve": "gatsby serve",
-    "test": "npm run jest"
+    "test:ci": "npm run jest",
+    "test:dev": "npm run jest -- -u"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -46,7 +47,7 @@
     "bs-jest-dom": "^2.0.1",
     "bs-platform": "^7.3.2",
     "bs-react-test-renderer": "^2.0.0",
-    "bs-react-testing-library": "^0.6.0",
+    "bs-react-testing-library": "^0.7.2",
     "gatsby": "^2.22.9",
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-offline": "^3.2.7",
