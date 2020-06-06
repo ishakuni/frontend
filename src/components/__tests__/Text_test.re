@@ -1,6 +1,5 @@
 open Jest;
 open Expect;
-open JestDom;
 open ReactTestingLibrary;
 
 describe("<Text />", () =>

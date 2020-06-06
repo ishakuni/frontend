@@ -1,5 +1,4 @@
 open Jest;
-open JestDom;
 open Expect;
 open ReactTestingLibrary;
 
@@ -13,7 +12,7 @@ describe("404 page", () => {
     |> render
     |> getByText(~matcher=`Str("404!"))
     |> expect
-    |> toBeInTheDocument
+    |> toMatchSnapshot
   );
 
   test("renders with a message", () =>
