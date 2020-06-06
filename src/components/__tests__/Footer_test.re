@@ -7,15 +7,13 @@ describe("Footer", () => {
   test("shows attribution", () =>
     <Footer />
     |> render
-    |> getByText(~matcher=`RegExp(Js.Re.fromString("Built with love")))
+    |> getAllByText(~matcher=`RegExp(Js.Re.fromString("Built with love")))
     |> expect
-    |> toBeInTheDocument
+    |> toMatchSnapshot
   );
   test("renders an author link", () => {
     let source =
-      <Footer /> |> render |> getByText(~matcher=`Str("@caulagi"));
-    source
-    |> expect
-    |> toHaveAttribute("href", ~value="//twitter.com/caulagi");
+      <Footer /> |> render |> getAllByText(~matcher=`Str("@caulagi"));
+    source |> expect |> toMatchSnapshot;
   });
 });

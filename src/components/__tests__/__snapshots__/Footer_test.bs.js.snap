@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders an author link 1`] = `
+Array [
+  <a
+    class="css-4txxhf"
+    href="//twitter.com/caulagi"
+    rel="noopener noreferrer"
+    target="_blank"
+    title=""
+  >
+    @caulagi
+  </a>,
+  <a
+    class="css-4txxhf"
+    href="//twitter.com/caulagi"
+    rel="noopener noreferrer"
+    target="_blank"
+    title=""
+  >
+    @caulagi
+  </a>,
+]
+`;
+
+exports[`Footer shows attribution 1`] = `
+Array [
+  <div
+    class="css-v81ei0"
+  >
+    Built with love by 
+    <a
+      class="css-4txxhf"
+      href="//twitter.com/caulagi"
+      rel="noopener noreferrer"
+      target="_blank"
+      title=""
+    >
+      @caulagi
+    </a>
+  </div>,
+]
+`;

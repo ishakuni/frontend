@@ -6,20 +6,12 @@ open ReactTestingLibrary;
 describe("<Link />", () => {
   let href = "//site.local/test";
 
-  test("renders", () =>
-    <Link href> {ReasonReact.string("A link")} </Link>
-    |> render
-    |> getByText(~matcher=`Str("A link"))
-    |> expect
-    |> toBeInTheDocument
-  );
-
   test("renders as a link", () =>
     <Link href> {ReasonReact.string("A link")} </Link>
     |> render
     |> getByText(~matcher=`Str("A link"))
     |> expect
-    |> toHaveAttribute("href", ~value=href)
+    |> toMatchSnapshot
   );
 
   test("renders with className", () =>
@@ -27,16 +19,16 @@ describe("<Link />", () => {
       {ReasonReact.string("A link")}
     </Link>
     |> render
-    |> getByText(~matcher=`Str("A link"))
+    |> getAllByText(~matcher=`Str("A link"))
     |> expect
-    |> toHaveClass("css-4txxhf css-1pm6ghi")
+    |> toMatchSnapshot
   );
 
   test("renders with title", () =>
     <Link href title="Test"> {ReasonReact.string("A link")} </Link>
     |> render
-    |> getByTitle("Test")
+    |> getByTitle(~matcher=`Str("Test"))
     |> expect
-    |> toBeInTheDocument
+    |> toMatchSnapshot
   );
 });
