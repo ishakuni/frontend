@@ -47,7 +47,7 @@
     "bs-platform": "^7.3.2",
     "bs-react-test-renderer": "^2.0.0",
     "bs-react-testing-library": "^0.7.3",
-    "gatsby": "^2.23.3",
+    "gatsby": "^2.23.7",
     "gatsby-plugin-manifest": "^2.4.12",
     "gatsby-plugin-offline": "^3.2.11",
     "gatsby-plugin-react-helmet": "^3.3.4",
