@@ -52,7 +52,7 @@
     "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-filesystem": "^2.3.12",
+    "gatsby-source-filesystem": "^2.3.14",
     "husky": "^4.2.5",
     "jest-dom": "^4.0.0",
     "lighthouse-ci": "^1.10.0",
