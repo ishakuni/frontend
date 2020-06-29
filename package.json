@@ -50,7 +50,7 @@
     "gatsby": "^2.23.11",
     "gatsby-plugin-manifest": "^2.4.12",
     "gatsby-plugin-offline": "^3.2.13",
-    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.12",
     "husky": "^4.2.5",
