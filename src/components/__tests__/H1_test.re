@@ -1,5 +1,6 @@
 open Jest;
 open Expect;
+
 open ReactTestingLibrary;
 
 describe("<H1 />", () => {
