@@ -46,7 +46,7 @@
     "bs-css-emotion": "^2.0.0",
     "bs-platform": "^8.2.0",
     "bs-react-testing-library": "^0.7.3",
-    "gatsby": "^2.24.54",
+    "gatsby": "^2.24.58",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-offline": "^3.2.27",
     "gatsby-plugin-react-helmet": "^3.3.10",
