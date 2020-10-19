@@ -44,7 +44,7 @@
     "babel-jest": "^26.6.0",
     "bs-css": "^13.0.0",
     "bs-css-emotion": "^2.0.0",
-    "bs-platform": "^8.2.0",
+    "bs-platform": "^8.3.1",
     "bs-react-testing-library": "^0.7.3",
     "gatsby": "^2.24.82",
     "gatsby-plugin-manifest": "^2.4.34",
