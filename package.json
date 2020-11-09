@@ -37,7 +37,7 @@
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
-    "@glennsl/bs-jest": "^0.5.1",
+    "@glennsl/bs-jest": "^0.6.0",
     "@moox/bs-react-helmet": "^2.1.0",
     "@wyze/gatsby-plugin": "^1.0.0",
     "babel-core": "^7.0.0-bridge.0",
