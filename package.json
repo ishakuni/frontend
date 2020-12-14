@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.12.10",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@glennsl/bs-jest": "^0.6.0",
     "@moox/bs-react-helmet": "^2.1.0",
