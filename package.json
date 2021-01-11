@@ -52,7 +52,7 @@
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.9.0",
-    "husky": "^4.3.6",
+    "husky": "^4.3.7",
     "jest-dom": "^4.0.0",
     "lighthouse-ci": "^1.12.0",
     "lint-staged": "^10.5.3",
