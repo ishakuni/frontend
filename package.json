@@ -34,7 +34,7 @@
     "test:dev": "npm run jest -- -u"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.10",
+    "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.13",
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@glennsl/bs-jest": "^0.7.0",
