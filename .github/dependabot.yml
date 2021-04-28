@@ -1,0 +1,43 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  reviewers:
+  - caulagi
+  ignore:
+  - dependency-name: babel-jest
+    versions:
+    - ">= 24.a, < 25"
+  - dependency-name: bs-platform
+    versions:
+    - "> 4.0.5, < 4.1"
+  - dependency-name: gatsby
+    versions:
+    - ">= 2.1.a, < 2.2"
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.14
+  - dependency-name: bs-css-emotion
+    versions:
+    - 2.2.0
+    - 2.3.0
+    - 2.4.0
+    - 2.4.1
+    - 2.5.0
+  - dependency-name: bs-css
+    versions:
+    - 13.2.0
+    - 13.3.0
+    - 13.4.0
+    - 13.4.1
+    - 14.0.0
+  - dependency-name: gatsby-plugin-manifest
+    versions:
+    - 2.11.0
+    - 2.12.0
+  - dependency-name: bs-platform
+    versions:
+    - 9.0.0
