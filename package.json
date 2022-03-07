@@ -43,7 +43,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "bs-css": "^13.0.0",
-    "bs-css-emotion": "^2.0.0",
+    "bs-css-emotion": "^4.1.1",
     "bs-platform": "^9.0.2",
     "bs-react-testing-library": "^0.8.0",
     "gatsby": "^2.32.12",
